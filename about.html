@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - DailyNews24</title>
+  <!-- Css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <span class="closeButton">&times;</span>
+      <p class="brand-title"><a href="/">DailyNews24</a></p>
+
+      <div class="side-links">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Menu Button -->
+    <div class="menuButton">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- main -->
+    <main class="container">
+      <section class="single-blog-post">
+        <h1>About Us </h1>
+        <div class="single-blog-post-ContentImage" data-aos="fade-left">
+          <img src="images/newspaper.jpg" alt="newspaper" />
+        </div>
+
+        <div>
+          <p class="about-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+             <br><br> 
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <div>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
+      <small>&copy 2024 DailyNews24</small>
+    </footer>
+  </div>
+
+  <!-- Click events to menu and close buttons using javaascript-->
+  <script>
+    document
+      .querySelector(".menuButton")
+      .addEventListener("click", function () {
+        document.querySelector(".sidebar").style.width = "100%";
+        document.querySelector(".sidebar").style.zIndex = "5";
+      });
+
+    document
+      .querySelector(".closeButton")
+      .addEventListener("click", function () {
+        document.querySelector(".sidebar").style.width = "0";
+      });
+  </script>
+</body>
+
+</html>
